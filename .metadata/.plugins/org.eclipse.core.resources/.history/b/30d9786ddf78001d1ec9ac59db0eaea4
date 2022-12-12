@@ -1,0 +1,11 @@
+package pos.java.maven.hibernate;
+
+public class TesteHibernate {
+	
+	public void TesteHibernateUtil() {
+		
+		HibernateUtil.getEntityManager();
+		
+	}
+
+}

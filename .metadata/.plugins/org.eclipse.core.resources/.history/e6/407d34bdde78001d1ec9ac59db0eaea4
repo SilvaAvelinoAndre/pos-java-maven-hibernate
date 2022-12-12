@@ -1,0 +1,26 @@
+package pos.java.maven.hibernate;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class HibernateUtil {
+	
+	public static EntityManagerFactory  fabrica = null;
+	
+	
+	public void inicializar() {
+		
+		try {
+			if(fabrica == null) {
+				
+				fabrica = Persistence.createEntityManagerFactory("pos-java-maven-hibernate");
+			}
+			
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+
+}

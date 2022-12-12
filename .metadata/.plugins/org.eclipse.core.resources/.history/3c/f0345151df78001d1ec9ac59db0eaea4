@@ -1,0 +1,5 @@
+package pos.java.maven.hibernate;
+
+public class TesteHibernateUtil {
+
+}
