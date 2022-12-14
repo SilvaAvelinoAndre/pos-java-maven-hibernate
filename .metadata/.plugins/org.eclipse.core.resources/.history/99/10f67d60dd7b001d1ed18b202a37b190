@@ -1,0 +1,37 @@
+package pos.java.maven.hibernate;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import dao.GenericDao;
+import model.UsuarioPessoa;
+
+public class TesteHibernate {
+	
+	@Test
+	@Ignore
+	public void TesteHibernateUtil() {
+		
+		HibernateUtil.getEntityManager();
+		
+	}
+
+	@Test
+	public void TesteDaoSalvar() {
+		
+		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
+		
+		UsuarioPessoa pessoa = new UsuarioPessoa();
+		
+		pessoa.setNome("Joselina teste 4");
+		pessoa.setSobrenome("da Cunha Pires");
+		pessoa.setIdade(45);
+		pessoa.setLogin("joselinacristina");
+		pessoa.setSenha("5678910");
+		pessoa.setEmail("joselinacristina@gmail.com");
+		
+		genericDao.salvar(pessoa);
+		
+	}
+	
+}

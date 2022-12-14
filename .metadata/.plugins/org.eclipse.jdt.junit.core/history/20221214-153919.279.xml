@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteHibernate" project="pos-java-maven-hibernate" tests="2" started="2" failures="0" errors="0" ignored="1">
+  <testsuite name="pos.java.maven.hibernate.TesteHibernate" time="1.816">
+    <testcase name="TesteHibernateUtil" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="TesteDaoSalvar" classname="pos.java.maven.hibernate.TesteHibernate" time="1.816"/>
+  </testsuite>
+</testrun>
