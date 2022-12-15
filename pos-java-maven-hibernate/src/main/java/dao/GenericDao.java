@@ -18,5 +18,24 @@ public class GenericDao<E> {
 		
 		
 	}
+	
+	public E pesquisar(E entidade) {
+		Object id = HibernateUtil.getPrimaryKey(entidade);
+		
+		@SuppressWarnings("unchecked")
+		E entity = (E) entityManager.find(entidade.getClass(), id); // vai buscar o id dentro da classe ou entidade.
+		
+		return entity;
+		
+	}
 
+	
+	public E pesquisarId(Long id, Class<E> entidade) {
+		
+		
+		E entity = (E) entityManager.find(entidade, id); // vai buscar o id dentro da classe ou entidade.
+		
+		return entity;
+		
+	}
 }

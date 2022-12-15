@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteHibernate" project="pos-java-maven-hibernate" tests="4" started="4" failures="0" errors="1" ignored="3">
+  <testsuite name="pos.java.maven.hibernate.TesteHibernate" time="1.704">
+    <testcase name="testePesquisarId" classname="pos.java.maven.hibernate.TesteHibernate" time="1.702">
+      <error>java.lang.IllegalArgumentException: Unable to locate persister: java.lang.Class&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3434)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3375)&#13;
+	at dao.GenericDao.pesquisarId(GenericDao.java:36)&#13;
+	at pos.java.maven.hibernate.TesteHibernate.testePesquisarId(TesteHibernate.java:56)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: org.hibernate.UnknownEntityTypeException: Unable to locate persister: java.lang.Class&#13;
+	at org.hibernate.metamodel.internal.MetamodelImpl.locateEntityPersister(MetamodelImpl.java:732)&#13;
+	at org.hibernate.internal.SessionImpl.locateEntityPersister(SessionImpl.java:3037)&#13;
+	at org.hibernate.internal.SessionImpl.access$1800(SessionImpl.java:202)&#13;
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.&lt;init&gt;(SessionImpl.java:2733)&#13;
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.&lt;init&gt;(SessionImpl.java:2716)&#13;
+	at org.hibernate.internal.SessionImpl.byId(SessionImpl.java:1185)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3398)&#13;
+	... 26 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="TesteHibernateUtil" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="testePesquisar" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="TesteDaoSalvar" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+  </testsuite>
+</testrun>

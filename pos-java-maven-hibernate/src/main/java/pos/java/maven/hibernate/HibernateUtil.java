@@ -29,5 +29,8 @@ public class HibernateUtil {
 	public static EntityManager getEntityManager() {
 		return fabrica.createEntityManager();
 	}
+	public static Object getPrimaryKey(Object entidade) {
+		return fabrica.getPersistenceUnitUtil().getIdentifier(entidade); // método retorna a chave primaria da entidade 
+	}
 	
 }
