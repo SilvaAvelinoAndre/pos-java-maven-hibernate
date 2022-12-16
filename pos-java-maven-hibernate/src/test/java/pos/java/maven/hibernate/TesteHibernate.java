@@ -105,10 +105,27 @@ public class TesteHibernate {
 		}
 	}
 	@Test
+	@Ignore
 	public void testQueryList() {
 		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
 		@SuppressWarnings("unchecked")
 		List<UsuarioPessoa> lista = genericDao.getEntityManager().createQuery(" from UsuarioPessoa where nome = 'katarina'").getResultList();
+		
+		for (UsuarioPessoa usuarioPessoa : lista) {
+			System.out.println(usuarioPessoa);
+		}
+		
+		
+	}
+	
+	@Test
+	public void testQueryListMaxResult() {
+		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
+		@SuppressWarnings("unchecked")
+		List<UsuarioPessoa> lista = genericDao.getEntityManager().
+		createQuery(" from UsuarioPessoa where nome = 'katarina'").
+		setMaxResults(1).
+		getResultList();
 		
 		for (UsuarioPessoa usuarioPessoa : lista) {
 			System.out.println(usuarioPessoa);
