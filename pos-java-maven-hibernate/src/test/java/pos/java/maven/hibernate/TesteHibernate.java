@@ -24,12 +24,12 @@ public class TesteHibernate {
 
 		UsuarioPessoa pessoa = new UsuarioPessoa();
 
-		pessoa.setNome("katarina");
-		pessoa.setSobrenome("da Cunha Pires");
-		pessoa.setIdade(45);
-		pessoa.setLogin("katarinapires");
-		pessoa.setSenha("5678910");
-		pessoa.setEmail("katarinapires@gmail.com");
+		pessoa.setNome("Hortencio");
+		pessoa.setSobrenome("Van dibriolli");
+		pessoa.setIdade(65);
+		pessoa.setLogin("vandibriolli");
+		pessoa.setSenha("77777777");
+		pessoa.setEmail("vandibriolli@gmail.com");
 
 		genericDao.salvar(pessoa);
 
@@ -60,6 +60,7 @@ public class TesteHibernate {
 
 	}
 	@Test
+	@Ignore
 	public void testeUpdateMerge() {
 		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
 
@@ -72,6 +73,18 @@ public class TesteHibernate {
 		
 		
 		System.out.println(pessoa);
+
+	}
+	
+	@Test
+	public void testeDelete() {
+		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
+
+		UsuarioPessoa pessoa = genericDao.pesquisarId(1L, UsuarioPessoa.class);
+
+		genericDao.deletarPorId(pessoa);
+		
+		
 
 	}
 	

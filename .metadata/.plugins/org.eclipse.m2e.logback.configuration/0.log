@@ -2746,3 +2746,24 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2022-12-14 21:07:21,383 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\main\resources
 2022-12-14 21:07:21,384 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-12-14 21:07:21,384 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\test\resources
+2022-12-16 09:34:03,958 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-12-16 09:37:23,095 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:37:23,097 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\main\resources
+2022-12-16 09:37:23,100 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:37:23,100 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\test\resources
+2022-12-16 09:40:03,476 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:40:03,477 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\main\resources
+2022-12-16 09:40:03,479 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:40:03,479 [Worker-13: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\test\resources
+2022-12-16 09:44:56,524 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:44:56,524 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\main\resources
+2022-12-16 09:44:56,526 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:44:56,527 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\test\resources
+2022-12-16 09:45:28,846 [Worker-13: Launching TesteHibernate] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:45:28,847 [Worker-13: Launching TesteHibernate] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\main\resources
+2022-12-16 09:45:28,849 [Worker-13: Launching TesteHibernate] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:45:28,850 [Worker-13: Launching TesteHibernate] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\test\resources
+2022-12-16 09:47:27,649 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:47:27,649 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\main\resources
+2022-12-16 09:47:27,656 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-12-16 09:47:27,656 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory F:\Workspace Jdev Treinamento\Workspace-JPA_Hibernate\pos-java-maven-hibernate\src\test\resources

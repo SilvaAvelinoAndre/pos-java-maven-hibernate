@@ -47,6 +47,17 @@ public class GenericDao<E> {
 				
 		return entidadeSalva;
 	}
+	
+	public void deletarPorId(E entidade) {
+		Object id = HibernateUtil.getPrimaryKey(entidade);
+		
+		EntityTransaction transaction = entityManager.getTransaction();
+		transaction.begin();
+		
+		//Comando envia um SQL direto pro banco isto evita erros no processo
+		entityManager.createNativeQuery("delete from " + entidade.getClass().getSimpleName().toLowerCase()+ " where id =" + id).executeUpdate();
+		transaction.commit();
+	}
 
 	
 }
