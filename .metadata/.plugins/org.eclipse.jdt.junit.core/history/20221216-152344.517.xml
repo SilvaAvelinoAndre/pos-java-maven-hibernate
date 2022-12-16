@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TesteHibernate" project="pos-java-maven-hibernate" tests="7" started="7" failures="0" errors="0" ignored="6">
+  <testsuite name="pos.java.maven.hibernate.TesteHibernate" time="1.781">
+    <testcase name="testePesquisarId" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="Listar" classname="pos.java.maven.hibernate.TesteHibernate" time="1.78"/>
+    <testcase name="TesteHibernateUtil" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="testePesquisar" classname="pos.java.maven.hibernate.TesteHibernate" time="0.001" ignored="true"/>
+    <testcase name="TesteDaoSalvar" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="testeDelete" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+    <testcase name="testeUpdateMerge" classname="pos.java.maven.hibernate.TesteHibernate" time="0.0" ignored="true"/>
+  </testsuite>
+</testrun>

@@ -1,5 +1,7 @@
 package pos.java.maven.hibernate;
 
+import java.util.List;
+
 import org.junit.Ignore;
 import org.junit.Test;
 
@@ -77,12 +79,31 @@ public class TesteHibernate {
 	}
 	
 	@Test
+	@Ignore
 	public void testeDelete() {
 		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
 
 		UsuarioPessoa pessoa = genericDao.pesquisarId(1L, UsuarioPessoa.class);
 
 		genericDao.deletarPorId(pessoa);
+		
+		
+
+	}
+	@Test
+	public void Listar() {
+		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
+
+		List<UsuarioPessoa> lista = genericDao.listar(UsuarioPessoa.class);
+		
+		for (UsuarioPessoa e : lista) {
+			
+			System.out.println(e);
+			System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------");
+			
+		}
+		
+		
 		
 		
 
