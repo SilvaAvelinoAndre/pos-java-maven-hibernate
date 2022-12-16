@@ -38,4 +38,15 @@ public class GenericDao<E> {
 		return entity;
 		
 	}
+	public E updateMerge(E entidade) { 
+		
+		EntityTransaction transaction = entityManager.getTransaction();
+		transaction.begin();
+		E entidadeSalva = entityManager.merge(entidade); // método merge não só atualiza dados existentes se não existir ele cria.
+		transaction.commit();
+				
+		return entidadeSalva;
+	}
+
+	
 }

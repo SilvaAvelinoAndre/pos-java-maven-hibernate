@@ -50,6 +50,7 @@ public class TesteHibernate {
 	}
 
 	@Test
+	@Ignore
 	public void testePesquisarId() {
 		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
 
@@ -58,4 +59,20 @@ public class TesteHibernate {
 		System.out.println(pessoa);
 
 	}
+	@Test
+	public void testeUpdateMerge() {
+		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
+
+		UsuarioPessoa pessoa = genericDao.pesquisarId(2L, UsuarioPessoa.class);
+
+		pessoa.setIdade(51);
+		pessoa.setSenha("5632895");
+	
+		pessoa = genericDao.updateMerge(pessoa);
+		
+		
+		System.out.println(pessoa);
+
+	}
+	
 }
