@@ -61,6 +61,7 @@ public class TesteHibernate {
 		System.out.println(pessoa);
 
 	}
+
 	@Test
 	@Ignore
 	public void testeUpdateMerge() {
@@ -70,14 +71,13 @@ public class TesteHibernate {
 
 		pessoa.setIdade(51);
 		pessoa.setSenha("5632895");
-	
+
 		pessoa = genericDao.updateMerge(pessoa);
-		
-		
+
 		System.out.println(pessoa);
 
 	}
-	
+
 	@Test
 	@Ignore
 	public void testeDelete() {
@@ -86,27 +86,36 @@ public class TesteHibernate {
 		UsuarioPessoa pessoa = genericDao.pesquisarId(1L, UsuarioPessoa.class);
 
 		genericDao.deletarPorId(pessoa);
-		
-		
 
 	}
+
 	@Test
+	@Ignore
 	public void Listar() {
 		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
 
 		List<UsuarioPessoa> lista = genericDao.listar(UsuarioPessoa.class);
-		
+
 		for (UsuarioPessoa e : lista) {
-			
+
 			System.out.println(e);
-			System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------");
-			
+			System.out.println(
+					"-----------------------------------------------------------------------------------------------------------------------------------------------");
+
+		}
+	}
+	@Test
+	public void testQueryList() {
+		GenericDao<UsuarioPessoa> genericDao = new GenericDao<UsuarioPessoa>();
+		@SuppressWarnings("unchecked")
+		List<UsuarioPessoa> lista = genericDao.getEntityManager().createQuery(" from UsuarioPessoa where nome = 'katarina'").getResultList();
+		
+		for (UsuarioPessoa usuarioPessoa : lista) {
+			System.out.println(usuarioPessoa);
 		}
 		
 		
-		
-		
-
 	}
+	
 	
 }

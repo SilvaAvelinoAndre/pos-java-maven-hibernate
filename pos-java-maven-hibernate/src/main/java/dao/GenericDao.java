@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
-import javax.transaction.Transaction;
 
 import pos.java.maven.hibernate.HibernateUtil;
 
@@ -66,11 +65,15 @@ public class GenericDao<E> {
 		EntityTransaction transaction = entityManager.getTransaction();
 		transaction.begin();
 		
+		@SuppressWarnings("unchecked")
 		List<E> lista = entityManager.createQuery("from " + entidade.getName()).getResultList();
 		transaction.commit();
 		
 		return lista;
 		
+	}
+	 public EntityManager getEntityManager() {
+		return entityManager;
 	}
 	
 }
